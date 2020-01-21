@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     padding-left: 20px;
     padding: right: 20px;
 
-`
+`;
 
 
 
@@ -17,7 +17,7 @@ const Container = ({children}) => {
             {children}
         </Wrapper>
     );
-}
+};
 
 
 export default Container;

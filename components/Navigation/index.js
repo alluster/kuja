@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import Container from '../Container'
-import React from 'react'
-import Link from 'next/link'
+import Container from '../Container';
+import Link from 'next/link';
 import Gx from '@tgrx/gx';
 
 
@@ -9,7 +8,7 @@ const LinkText = styled.h3`
     text-transform: uppercase;
     font-weight: 500;
     text-align: center;
-`
+`;
 
 const Navigation = () => {
     return(
@@ -17,51 +16,41 @@ const Navigation = () => {
             <Gx col={2}>
                 <Link prefetch href="/">
                     <a>
-                       <LinkText>
-                            Collection
-                       </LinkText> 
+                       <LinkText>Collection</LinkText> 
                     </a>
                 </Link>
             </Gx>
             <Gx col={2}>
                 <Link prefetch href="/">
                     <a>
-                       <LinkText>
-                            Custom
-                       </LinkText> 
+                    <LinkText>Custom</LinkText> 
                     </a>
                 </Link>
             </Gx>
             <Gx col={2}>
                 <Link prefetch href="/">
                     <a>
-                       <LinkText>
-                            About
-                       </LinkText> 
+                        <LinkText>About</LinkText> 
                     </a>
                 </Link>
             </Gx>
             <Gx col={2}>
                 <Link prefetch href="/">
                     <a>
-                       <LinkText>
-                            Journal
-                       </LinkText> 
+                        <LinkText>Journal</LinkText> 
                     </a>
                 </Link>
             </Gx>
             <Gx col={2}>
                 <Link prefetch href="/">
                     <a>
-                       <LinkText>
-                            Studio
-                       </LinkText> 
+                        <LinkText>Studio</LinkText> 
                     </a>
                 </Link>
             </Gx>
         </Container>
     );
-}
+};
 
 
 export default Navigation;
