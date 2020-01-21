@@ -1,9 +1,10 @@
-import Link from 'next/link'
-import Head from '../components//head'
+import React from 'react';
+import Head from '../components//head';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import { createGlobalStyle } from "styled-components";
 import TopNavigation from '../components/TopNavigation';
+import PropTypes from 'prop-types';
 
 
 
@@ -63,7 +64,10 @@ const Layout = ({title, children}) => {
       }
     
 
-  
+  Layout.propTypes = {
+	  children: PropTypes.object,
+	  title: PropTypes.string
+  }
     
 
 export default Layout;

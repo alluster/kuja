@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react'
 import React from 'react';
 import Layout from '../layouts/layout';
-import Navigation from '../components/Navigation';
 import Client from '../connect-shopify';
 import Products from '../components/Products';
-import Hero from '../components/Hero';
 import theme from "../theme";
 import { ThemeProvider } from 'styled-components';
 import Container from '../components/Container';
