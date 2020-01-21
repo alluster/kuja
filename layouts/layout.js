@@ -61,7 +61,7 @@ const Layout = ({title, children}) => {
 			{ children }
 		</div>
         );
-      }
+}
     
 
   Layout.propTypes = {
