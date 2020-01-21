@@ -65,8 +65,8 @@ const Layout = ({title, children}) => {
     
 
   Layout.propTypes = {
-	  children: PropTypes.object,
-	  title: PropTypes.string
+		children: PropTypes.object,
+	  	title: PropTypes.string
   }
     
 
