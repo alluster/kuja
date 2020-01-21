@@ -3,8 +3,10 @@
       "browser": true,
       "es6": true,
       "commonjs": true,
+      "amd": true,
       "node": true
     },
+    
     "extends": "eslint:recommended",
     "parserOptions": {
       "ecmaVersion": 9,
