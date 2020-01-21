@@ -55,7 +55,7 @@ class MyDocument extends Document {
                 <Head>
                     {this.props.styleTags}
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                    <meta property="og:site_name" content="Extreme Consulting" />
+                    <meta property="og:site_name" content="Kuja" />
                     <link rel="icon" type="image/png" href="/favicon.ico" sizes="48x48" />
                     <link
                         href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700"
