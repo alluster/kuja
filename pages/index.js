@@ -7,6 +7,7 @@ import Products from '../components/Products';
 import Hero from '../components/Hero';
 import theme from "../theme";
 import { ThemeProvider } from 'styled-components';
+import Container from '../components/Container';
 
 const Home = () => {
 
@@ -22,8 +23,10 @@ const Home = () => {
 		<ThemeProvider theme={theme}>
 			<Head title="Home" />
 			<Hero />
-			<Navigation />
-			{Products(productsList)}
+			<Container>
+				<Navigation />
+				{Products(productsList)}
+			</Container>
 		</ThemeProvider>
 	)
 }

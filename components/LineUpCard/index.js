@@ -3,14 +3,15 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Container = styled.div`
-    max-width: 300px;
+    max-width: 100%;
+    padding: 10px;
 `;
 const Image = styled.img`
     margin: 15px;
     object-fit: cover;
-    min-width: 300px;
+    min-width: 100%;
     min-height: 300px;
-    max-width: 300px;
+    max-width: 100%;
     max-height: 300px;
 `;
 
