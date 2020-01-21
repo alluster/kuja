@@ -2,7 +2,6 @@ import LineUpCard from '../LineUpCard';
 import Gx from '@tgrx/gx';
 import React from 'react';
 
-
 const Products = (productsList) => {
     return(
         productsList.map((item, i) => {

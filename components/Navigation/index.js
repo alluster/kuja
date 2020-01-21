@@ -11,45 +11,47 @@ const LinkText = styled.h3`
     text-align: center;
 `;
 
+const NavContainer = styled.div`
+    text-align: center;
+    margin-bottom: 30px;
+`
+
+
 const Navigation = () => {
     return(
         <Container>
-            <Gx col={2}>
-                <Link href="/">
-                    <a>
-                       <LinkText>Collection</LinkText> 
-                    </a>
-                </Link>
+            <NavContainer>
+                <Gx col={3}>
+                    <Link href="/product">
+                        <a>
+                        <LinkText>Collection</LinkText> 
+                        </a>
+                    </Link>
+                </Gx>
+                <Gx col={3}>
+                    <Link href="/">
+                        <a>
+                        <LinkText>Custom</LinkText> 
+                        </a>
+                    </Link>
+                </Gx>
+                <Gx col={3}>
+                    <Link href="/">
+                        <a>
+                            <LinkText>About</LinkText> 
+                        </a>
+                    </Link>
+                </Gx>
+                <Gx col={3}>
+                    <Link href="/">
+                        <a>
+                            <LinkText>Studio</LinkText> 
+                        </a>
+                    </Link>
             </Gx>
-            <Gx col={2}>
-                <Link href="/">
-                    <a>
-                    <LinkText>Custom</LinkText> 
-                    </a>
-                </Link>
-            </Gx>
-            <Gx col={2}>
-                <Link href="/">
-                    <a>
-                        <LinkText>About</LinkText> 
-                    </a>
-                </Link>
-            </Gx>
-            <Gx col={2}>
-                <Link  href="/">
-                    <a>
-                        <LinkText>Journal</LinkText> 
-                    </a>
-                </Link>
-            </Gx>
-            <Gx col={2}>
-                <Link href="/">
-                    <a>
-                        <LinkText>Studio</LinkText> 
-                    </a>
-                </Link>
-            </Gx>
+        </NavContainer>
         </Container>
+
     );
 };
 

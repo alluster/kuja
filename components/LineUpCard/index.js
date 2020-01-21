@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Link from '../../node_modules/next/link';
 
 const Container = styled.div`
     max-width: 100%;
@@ -13,6 +14,11 @@ const Image = styled.img`
     min-height: 300px;
     max-width: 100%;
     max-height: 300px;
+    &:hover {
+        opacity: .4
+        background: #555;
+        cursor: pointer;
+      }
 `;
 
 const Description = styled.div`
@@ -32,7 +38,11 @@ const Price = styled.h3 `
 const LineUpCard = ({productInfo}) => {
     return(
         <Container>
-            <Image src={productInfo.images[0].src}/>
+            <Link href='/product'>
+            <a>
+                <Image src={productInfo.images[0].src}/>
+            </a>
+            </Link>    
             <Description>
                 <Title>{productInfo.title}</Title>
                 <Price>{productInfo.variants[0].price} €</Price>

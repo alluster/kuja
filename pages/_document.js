@@ -1,44 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
-import { createGlobalStyle } from "styled-components";
 import React from 'react';
 
-const GlobalStyle = createGlobalStyle`
-    body, html {
-        margin: 0px;
-        padding: 0px;
-        max-width: 100%;
-        height: 100%;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-    h1 {
-        margin: 0
-    }
-    img {
-        max-width: 100%;
-    }
-    a {
-        all: unset;
-    }
-    a:link {
-        all: unset;
-    }
-    a:focus {
-        all: unset;
-    }
-    a:active {
-        all: unset;
-    }
-    a:visited {
-        all: unset;
-    }
-    a:hover {
-        all: unset;
-    }
-    button {
-        all: unset;
-    }
-`;
 
 class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -67,7 +30,6 @@ class MyDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
-                    <GlobalStyle />
                 </body>
             </html>
         );

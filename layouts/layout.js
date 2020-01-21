@@ -1,14 +1,11 @@
-import { useEffect, useState } from 'react'
-import React from 'react';
-import Layout from '../layouts/layout';
+import Link from 'next/link'
+import Head from '../components//head'
 import Navigation from '../components/Navigation';
-import Client from '../connect-shopify';
-import Products from '../components/Products';
 import Hero from '../components/Hero';
-import theme from "../theme";
-import { ThemeProvider } from 'styled-components';
-import Container from '../components/Container';
 import { createGlobalStyle } from "styled-components";
+import TopNavigation from '../components/TopNavigation';
+
+
 
 const GlobalStyle = createGlobalStyle`
     body, html {
@@ -46,25 +43,27 @@ const GlobalStyle = createGlobalStyle`
         all: unset;
     }
 `;
-const Home = () => {
-
-	const [productsList, setProducts] = useState([])
-
-	useEffect(() => {
-		Client.product.fetchAll()
-		.then((product) => {setProducts(product) })
-	}, [])
-	
-		
-	return(
-		<ThemeProvider theme={theme}>
-			<Layout title="Home" />
-			<Container>
-				{Products(productsList)}
-			</Container>
+const Layout = ({title, children}) => {
+    return(
+		<div>
+			<Head>
+				<title>{ title }</title>
+				<meta charSet='utf-8' />
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
+			</Head>
+			<header>
+				<TopNavigation />
+				<Hero />
+				<Navigation />
+			</header>
 			<GlobalStyle />
-		</ThemeProvider>
-	)
-}
+			{ children }
+		</div>
+        );
+      }
+    
 
-export default Home
+  
+    
+
+export default Layout;
