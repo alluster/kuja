@@ -1,6 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import { createGlobalStyle } from "styled-components";
+import React from 'react';
 
 const GlobalStyle = createGlobalStyle`
     body, html {

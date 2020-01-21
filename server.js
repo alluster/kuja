@@ -1,14 +1,10 @@
-/* eslint-disable no-console */
+/*eslint no-use-before-define: 2*/
 const express = require('express');
 const next = require('next');
-const fetch = require("node-fetch");
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const routes = require('./routes');
 const handle = routes.getRequestHandler(app);
-const url = require('url');
-
-
 const PORT = process.env.PORT || 3000;
 
 app.prepare().then(() => {
