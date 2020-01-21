@@ -5,6 +5,7 @@ module.exports = {
     SHOPIFY_SHARED_SECRET:'3f47083b4ed4fa995c22af1b22d04d92',
     SHOPIFY_STOREFRONT_ACCESS_KEY:'511cd147a817e9508e57354ce3157aa2',
     SHOPIFY_DOMAIN:'kuja-testi-1.myshopify.com',
+    HOST: 'localhost:'
     },
   webpack: config => {
     // Fixes npm packages that depend on `fs` module
