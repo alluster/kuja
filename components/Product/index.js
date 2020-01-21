@@ -1,14 +1,12 @@
-import styled from 'styled-components';
-import Conatainer from './Container'
-
+import Container from './Container'
+import React from 'react';
 
 const Product = () => {
     return(
-        <Conatainer>
-            <div>
-                
+        <Container>
+            <div>     
             </div>
-        </Conatainer>
+        </Container>
     );
 }
 

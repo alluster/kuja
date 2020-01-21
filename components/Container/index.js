@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -19,5 +20,8 @@ const Container = ({children}) => {
     );
 };
 
+ Container.propTypes = {
+     children : PropTypes.object
+ }
 
 export default Container;

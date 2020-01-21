@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Container = styled.div`
     max-width: 300px;
@@ -39,5 +41,8 @@ const LineUpCard = ({productInfo}) => {
     );
 };
 
+LineUpCard.propTypes = { 
+    productInfo: PropTypes.object, 
+} 
 
 export default LineUpCard;
