@@ -15,35 +15,35 @@ const Navigation = () => {
     return(
         <Container>
             <Gx col={2}>
-                <Link prefetch href="/">
+                <Link href="/">
                     <a>
                        <LinkText>Collection</LinkText> 
                     </a>
                 </Link>
             </Gx>
             <Gx col={2}>
-                <Link prefetch href="/">
+                <Link href="/">
                     <a>
                     <LinkText>Custom</LinkText> 
                     </a>
                 </Link>
             </Gx>
             <Gx col={2}>
-                <Link prefetch href="/">
+                <Link href="/">
                     <a>
                         <LinkText>About</LinkText> 
                     </a>
                 </Link>
             </Gx>
             <Gx col={2}>
-                <Link prefetch href="/">
+                <Link  href="/">
                     <a>
                         <LinkText>Journal</LinkText> 
                     </a>
                 </Link>
             </Gx>
             <Gx col={2}>
-                <Link prefetch href="/">
+                <Link href="/">
                     <a>
                         <LinkText>Studio</LinkText> 
                     </a>

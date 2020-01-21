@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Wrapper = styled.div`
     max-width: 900px;
@@ -21,7 +22,11 @@ const Container = ({children}) => {
 };
 
  Container.propTypes = {
-     children : PropTypes.object
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+        PropTypes.string
+    ]).isRequired
  }
 
 export default Container;

@@ -1,7 +1,5 @@
-import fetch from 'node-fetch';
 import Client from 'shopify-buy';
 
-global.fetch = fetch;
 
 const client = Client.buildClient({    
     domain: process.env.SHOPIFY_DOMAIN,
