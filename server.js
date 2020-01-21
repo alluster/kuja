@@ -1,4 +1,3 @@
-/*eslint no-use-before-define: 2*/
 const express = require('express');
 const next = require('next');
 const dev = process.env.NODE_ENV !== 'production';
@@ -12,16 +11,7 @@ app.prepare().then(() => {
 
    
 
-    server.get('/api/articles', (req, res) => {
-        getArticles()
-            .then(articles => {
-                res.json(articles);
-            })
-            .catch(error => {
-                console.dir(error);
-            });
-    });
-
+   
     server.get('*', (req, res) => {
         return handle(req, res);
     });
