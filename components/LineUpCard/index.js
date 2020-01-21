@@ -15,7 +15,6 @@ const Image = styled.img`
 `;
 
 const Description = styled.div`
-    padding: 15px;
     text-align: center
 `;
 
@@ -25,7 +24,7 @@ const Title = styled.h3 `
 `;
 
 const Price = styled.h3 `
-    text-weight: 300;
+    font-weight: 300;
     font-size: 12px;
 `;
 

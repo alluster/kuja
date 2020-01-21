@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0px;
         max-width: 100%;
         height: 100%;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     h1 {
         margin: 0

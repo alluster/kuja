@@ -12,7 +12,7 @@ const Hero = () => {
     return(
         <Container>
             <Title>
-                 Shop
+                 Kuja Shop
             </Title>
         </Container>
     );
