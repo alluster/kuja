@@ -63,11 +63,10 @@ const Layout = ({title, children}) => {
         );
 }
     
-
-  Layout.propTypes = {
-		children: PropTypes.object,
-	  	title: PropTypes.string
-  }
+Layout.propTypes = {
+	children: PropTypes.object,
+	title: PropTypes.string
+}
     
 
 export default Layout;
