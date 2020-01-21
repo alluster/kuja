@@ -8,7 +8,7 @@ import Gx from '@tgrx/gx';
 const LinkText = styled.h3`
     text-transform: uppercase;
     font-weight: 500;
-    text-align: center
+    text-align: center;
 `
 
 const Navigation = () => {
