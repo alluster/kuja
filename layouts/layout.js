@@ -5,8 +5,9 @@ import Hero from '../components/Hero';
 import { createGlobalStyle } from "styled-components";
 import TopNavigation from '../components/TopNavigation';
 import PropTypes from 'prop-types';
-
-
+import Footer from '../components/Footer';
+import theme from "../theme";
+import { ThemeProvider } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     body, html {
@@ -46,7 +47,8 @@ const GlobalStyle = createGlobalStyle`
 `;
 const Layout = ({title, children}) => {
     return(
-		<div>
+		<ThemeProvider theme={theme}>
+		
 			<Head>
 				<title>{ title }</title>
 				<meta charSet='utf-8' />
@@ -59,7 +61,8 @@ const Layout = ({title, children}) => {
 			</header>
 			<GlobalStyle />
 			{ children }
-		</div>
+			<Footer />
+		</ThemeProvider>
         );
 }
     

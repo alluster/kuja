@@ -38,7 +38,7 @@ const Price = styled.h3 `
 const LineUpCard = ({productInfo}) => {
     return(
         <Container>
-            <Link href='/product'>
+            <Link href={{ pathname: '/product', query: { id: productInfo.id } }}>
             <a>
                 <Image src={productInfo.images[0].src}/>
             </a>

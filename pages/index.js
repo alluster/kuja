@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import React from 'react';
 import Layout from '../layouts/layout';
 import Client from '../connect-shopify';
 import Products from '../components/Products';
-import theme from "../theme";
-import { ThemeProvider } from 'styled-components';
 import Container from '../components/Container';
 import { createGlobalStyle } from "styled-components";
+
 
 const GlobalStyle = createGlobalStyle`
     body, html {
@@ -44,24 +43,25 @@ const GlobalStyle = createGlobalStyle`
         all: unset;
     }
 `;
+
+
 const Home = () => {
-
 	const [productsList, setProducts] = useState([])
-
 	useEffect(() => {
 		Client.product.fetchAll()
 		.then((product) => {setProducts(product) })
-	}, [])
-	
-		
+	}, []);
+
 	return(
-		<ThemeProvider theme={theme}>
-			<Layout title="Home" />
+		<Layout title="Home" >
 			<Container>
-				{Products(productsList)}
+				
+					{Products(productsList)} 
+					
+				
 			</Container>
 			<GlobalStyle />
-		</ThemeProvider>
+		</Layout>
 	)
 }
 
